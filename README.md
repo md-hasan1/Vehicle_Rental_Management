@@ -90,6 +90,19 @@ npm run build
 npm start
 ```
 
+### 8. Postman API Documentation
+You can find the pre-configured Postman Collection and API request examples online:
+* Online Documentation: [Postman API Documentation](https://documenter.getpostman.com/view/27468363/2sBY4WnGae)
+
+**How to use:**
+1. Open the [Postman API Documentation](https://documenter.getpostman.com/view/27468363/2sBY4WnGae) link.
+2. Click **Run in Postman** (or fork/import the collection) to import the API requests directly into your local Postman app.
+3. The collection is pre-configured with two variables:
+   * `base_url`: `http://localhost:5000/api/v1` (adjust the port if you change your `.env` port).
+   * `token`: Your JWT token.
+4. Go to the **Login** request (`POST /auth/login`), send the request with the seeded credentials (`admin@rental.com` / `password123`), copy the returned `token` value, and paste it into the Collection's **Variables** tab under `token` (or set it as an active environment variable).
+5. All other requests in the collection are pre-configured to automatically inherit this token in their authentication headers.
+
 ## API Endpoints
 
 Base URL: `http://localhost:5000/api/v1`
@@ -225,7 +238,3 @@ src/
     ├── sendResponse.ts                 # Standardised response
     └── pick.ts                         # Object key picker
 ```
-
-## License
-
-ISC
