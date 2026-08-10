@@ -1,7 +1,7 @@
 {
   "name": "vehicle-rental-management",
   "version": "1.0.0",
-  "description": "Vehicle Rental Management REST API — Express + Knex + PostgreSQL",
+  "description": "Vehicle Rental Management REST API \u2014 Express + Knex + PostgreSQL",
   "main": "dist/server.js",
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
@@ -14,7 +14,14 @@
     "format": "prettier --write \"src/**/*.ts\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["vehicle", "rental", "management", "express", "knex", "postgresql"],
+  "keywords": [
+    "vehicle",
+    "rental",
+    "management",
+    "express",
+    "knex",
+    "postgresql"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -30,6 +37,7 @@
     "knex": "^3.1.0",
     "morgan": "^1.10.1",
     "multer": "^1.4.5-lts.1",
+    "node-fetch": "^3.3.2",
     "pg": "^8.13.1"
   },
   "devDependencies": {
